@@ -67,7 +67,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
-          <svg class="modal-icon" width="18" height="18">;
+          <svg class="modal-icon-close" width="18" height="18">;
         <use href="./images/icons.svg.svg#icon-close"></use>
         </svg></button>
         <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
@@ -76,6 +76,9 @@
             <div class="modal-conteiner">
             <label class="modal-label" for="user-name">Имя</label>
             <input class="modal-input" type="text" name="user-name" id="user-name" autofocus>
+          <svg class="modal-icon-form" width="18" height="18">
+          <use href="./images/icons.svg.svg#icon-user"></use>
+          </svg>
           </div>
          <div class="modal-conteiner">
            <label for="user-name" class="modal-label">Телефон</label>
@@ -92,7 +95,7 @@
           </div>
           <div class="modal-conteiner-checkbox">
             <label class="modal-ceckbox-label">
-              <input type="checkbox">
+              <input class="checkbox" type="checkbox">
               <svg class="" width="16" height="15">;
               <use href="./images/icons.svg.svg#icon-checkbox"></use>
               </svg>
@@ -590,13 +593,15 @@
         <form class="footer-form">
           <label for="user-mail-submit">
             <input class="footer-input" type="email" placeholder="E-mail">
-          <button class="footer-submit-btn" type="submit">
+          </label>
+            <button class="footer-submit-btn" type="button">
             <span>Подписаться</span>
             <svg class="footer-submit-icon" width="24" height="24">
             <use href="./images/icons.svg.svg#icon-submit"></use>
             </svg>
+          
           </button>
-          </label>
+          
         </form>
       </div>
       </div>

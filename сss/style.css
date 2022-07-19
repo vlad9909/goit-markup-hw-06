@@ -630,10 +630,11 @@ transition: background var(--anime-time-cubic);
             line-height: calc(30/16);
             letter-spacing: 0.06em;
         color: var(--white-color-txt);
-        position: relative;
-        top: 0;
-        left: 0;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12px;
+        cursor: pointer;
 }
 
 .footer-form {
@@ -642,7 +643,8 @@ transition: background var(--anime-time-cubic);
 
 .footer-submit-icon {
     fill: white;
-    position: absolute;
+    margin-left: 10px;
+    
 }
 
 .footer-form {
@@ -811,6 +813,16 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
         cursor: pointer;
 
     transform: translate(-25%, 25%);
+
+    transition: color var(--anime-time-cubic);
+}
+
+.modal-icon-close {
+    fill: currentColor;
+}
+
+.modal-close-btn:hover {
+    color: var(--accent-color-txt);
 }
 
 .backdrop.is-hidden {
@@ -850,6 +862,17 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
         height: 40px;
         border: 1px solid rgba(33, 33, 33, 0.2);
             border-radius: 4px;
+        transition: border var(--anime-time-cubic);
+    }
+
+        .modal-input:hover,
+                .modal-input:focus {
+            border: 1px solid var(--accent-color-txt);
+            cursor: pointer;
+                }
+
+    .modal-icon-form {
+        fill: black;
     }
 
     .coments {
@@ -858,6 +881,13 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
             border: 1px solid rgba(33, 33, 33, 0.2);
                 border-radius: 4px;
                 resize: none;
+                transition: border var(--anime-time-cubic);
+    }
+    
+    .coments:hover,
+    .coments:focus {
+        border: 1px solid var(--accent-color-txt);
+        cursor: pointer;
     }
     
     .modal-conteiner {
@@ -893,6 +923,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
                 justify-content: center;
                 border: none;
                 margin: auto;
+                cursor: pointer;
         }
 
         .modal-checkbox-txt {
@@ -913,5 +944,11 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
             margin-top: 20px;
             margin-bottom: 30px;
         }
+
+        .checkbox:hover {
+cursor: pointer;
+        }
+
+
 
         
